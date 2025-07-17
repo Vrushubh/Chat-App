@@ -51,4 +51,6 @@ await connectDB();
 
 
 //Export sever for vercel
-export default app;
+export default (req, res) => {
+  return server.emit("request", req, res);
+};
