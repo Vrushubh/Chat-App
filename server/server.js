@@ -53,7 +53,7 @@ app.use("/api/messages" , messageRouter);
 await connectDB();
 
 app.get("/", (req, res) => {
-  res.send("Backend is live ✅");
+  res.send("Backend THALA is live ✅");
 });
 
 
