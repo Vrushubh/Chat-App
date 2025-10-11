@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import assets, { messagesDummyData } from '../assets/assets'
 import { formatMessageTime } from '../libraries/utils'
 import { ChatContext } from '../../context/ChatContext'
-import { AuthContext } from '../../context/authContext'
+import { AuthContext } from '../../context/AuthContext'
 import toast from 'react-hot-toast'
 
 const ChatContainer = () => {
