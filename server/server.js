@@ -52,6 +52,10 @@ app.use("/api/messages" , messageRouter);
 // Connect to MongoDB
 await connectDB();
 
+app.get("/", (req, res) => {
+  res.send("Backend is live ✅");
+});
+
 
 const port = process.env.PORT || 5000;
 server.listen(port , ()=> console.log("Server is Running on PORT : " + port));
